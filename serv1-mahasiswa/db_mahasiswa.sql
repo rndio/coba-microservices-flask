@@ -1,0 +1,101 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Apr 08, 2024 at 05:19 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db_mahasiswa`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mahasiswa`
+--
+
+CREATE TABLE `mahasiswa` (
+  `id` int(11) NOT NULL,
+  `nim` char(10) NOT NULL,
+  `nama` varchar(60) NOT NULL,
+  `jk` enum('L','P') NOT NULL,
+  `prodi` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `mahasiswa`
+--
+
+INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `jk`, `prodi`) VALUES
+(1, '2205181001', 'APRILINA MARTINEZ', 'P', 'TRPL'),
+(2, '2205181004', 'FITZAN ASHARI', 'L', 'TRPL'),
+(3, '2205181006', 'MUHAMMAD YUSUF AULIA', 'L', 'TRPL'),
+(4, '2205181008', 'DEDE RIZALDI', 'L', 'TRPL'),
+(5, '2205211001', 'MUTIA HALIZA', 'P', 'TRJT'),
+(6, '2205211005', 'NURUL ANNISA', 'P', 'TRJT'),
+(7, '2205211008', 'AIDIL FITRA', 'L', 'TRJT'),
+(8, '2205211014', 'RICHAD G.P. PANJAITAN', 'L', 'TRJT'),
+(9, '2205211018', 'MUHAMMAD ZAINUDDIN', 'L', 'TRJT'),
+(10, '2205141001', 'MUHAMMAD REZA SARAGIH', 'L', 'MRKG'),
+(11, '2205141003', 'LULU ROITO SIANTURI', 'P', 'MRKG'),
+(12, '2205141005', 'MUHAMMAD HABIB ABDI', 'L', 'MRKG'),
+(13, '2205141006', 'DANIEL SEVEN SAMOSIR', 'L', 'MRKG'),
+(14, '2205141009', 'AMALLIA', 'P', 'MRKG'),
+(15, '2205121001', 'NASYWA AZ-ZAHRA', 'P', 'MICE'),
+(16, '2205121004', 'MERDIANA PINAYUNGAN', 'P', 'MICE'),
+(17, '2205121007', 'HAMKA ANUGRAH RAMADHANA', 'L', 'MICE'),
+(18, '2205121011', 'ELSARAH PUTRI SYAM', 'P', 'MICE'),
+(19, '2205121013', 'PUTRI LORENSIA SIMAMORA', 'P', 'MICE'),
+(20, '2205171001', 'DIAN SEPBILA', 'P', 'MB'),
+(21, '2205171006', 'MUHAMMAD FAUZANI AKBAR', 'L', 'MB'),
+(22, '2205171013', 'APRIALDO ABDINATA SITANGGANG', 'L', 'MB'),
+(23, '2205171016', 'SHELVIA PUTRI ANANDA', 'P', 'MB'),
+(24, '2205171021', 'RISKI PUTRI IKHWANI', 'P', 'MB'),
+(25, '2205161001', 'ADINDA PUSPITA SARI', 'P', 'PS'),
+(26, '2205161003', 'AIDA FATIN PASARIBU', 'P', 'PS'),
+(27, '2205161005', 'AWALLIA FITRI', 'P', 'PS'),
+(28, '2205161007', 'VIVI MAHARANI', 'P', 'PS'),
+(29, '2205161010', 'PUTRI MONICA AFISTA', 'P', 'PS'),
+(30, '2205102001', 'DENI KURNIAWATI WARUWU', 'P', 'MI'),
+(31, '2205102006', 'RAI AGUNG PRATAMA SITEPU', 'L', 'MI'),
+(32, '2205102007', 'ARI MUSTIKA SITORUS', 'P', 'MI'),
+(33, '2205102012', 'AZZI ICHWAL ANHAR MUHAMMAD RITONGA', 'L', 'MI'),
+(34, '2205102015', 'NUR AZID PRATAMA', 'L', 'MI');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `mahasiswa`
+--
+ALTER TABLE `mahasiswa`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `mahasiswa`
+--
+ALTER TABLE `mahasiswa`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
